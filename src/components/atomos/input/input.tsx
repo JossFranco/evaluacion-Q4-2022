@@ -1,0 +1,21 @@
+import {FC, InputHTMLAttributes } from 'react'
+import './input.scss'
+
+interface InputProps extends InputHTMLAttributes<HTMLInputElement>{
+    errorMessage?: string
+    labelMessage?: string
+    inputRef?: React.RefObject<HTMLInputElement>
+}
+
+export const Input: FC<InputProps> = 
+({errorMessage, labelMessage, inputRef,...props}) => {
+    return(
+        <div className={className}>
+        <label htmlFor={rest.id} className="input__label">
+          {labelMessage}
+        </label>
+        <input className="input__element" onChange={onChange} {...rest} />
+        <span className="input__message-error">{errorMessage}</span>
+      </div>
+    )
+}
