@@ -1,14 +1,13 @@
 import {FC, InputHTMLAttributes } from 'react'
 import './input.scss'
-
 interface InputProps extends InputHTMLAttributes<HTMLInputElement>{
     errorMessage?: string
     labelMessage?: string
-    inputRef?: React.RefObject<HTMLInputElement>
 }
 
 export const Input: FC<InputProps> = 
-({errorMessage, labelMessage, inputRef,...props}) => {
+({errorMessage, labelMessage, onChange,...rest}) => {
+    const className = rest.className ? rest.className : 'input'
     return(
         <div className={className}>
         <label htmlFor={rest.id} className="input__label">

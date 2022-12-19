@@ -1,12 +1,12 @@
 import React, { FC, useEffect, useState } from 'react'
 import { Card } from '../../molecules/card/card'
-import { Navbar } from '../../molecules/navbar/navbar'
+import { Search } from '../../molecules/search/search'
 import { Gift } from '../../../interfaces/interfaces'
 import { UserService } from '../../../services/user.service'
 import DeleteIcon from "./assets/delete-icon.svg";
 import WarningIcon from "./assets/warning-icon.svg";
-import { Title } from '../../atoms/title/title'
-import { gift } from '../../../data/gift'
+import { Title } from '../../atomos/title/title' 
+import { Gift } from '../../../services/user.service' 
 
 
 export interface HomeProps {
