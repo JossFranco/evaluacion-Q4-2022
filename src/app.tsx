@@ -3,13 +3,10 @@ import WarningIcon from "./assets/warning-icon.svg";
 import "./app.scss";
 import  {Home}  from "./components/pages/home/home";
 
-const App = () => {
+export const App = () => {
   return (
     <div className="app">
-      <Home/>
+      <Home />
       </div>
-     
-
-};
-
-export default App;
+  )
+}

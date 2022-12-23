@@ -11,7 +11,7 @@ interface SearchProps {
 export const Search: FC<SearchProps> = (props: SearchProps) => {
     const [url, setUrl] = useState('')
     const [errorMessage, setErrorMessage] = useState('')
-    const [gitf, setGift] = useState<Gift>({
+    const [gift, setGift] = useState<Gift>({
         id:0,
         url: '',
         author_id:19

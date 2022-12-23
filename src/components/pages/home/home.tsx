@@ -1,5 +1,5 @@
 import React, { FC, useEffect, useState } from 'react'
-import { Card } from '../../molecules/card/card'
+import { Card } from '../../atomos/card/card'
 import { Search } from '../../molecules/search/search'
 import { Gift } from '../../../interfaces/interfaces'
 import { UserService } from '../../../services/user.service'
@@ -28,10 +28,10 @@ export const Home: FC<HomeProps> = (props: HomeProps) => {
       return (
           <>
           <Title principalText='Gift Galery'></Title>
-          <Navbar/>
+          <Search/>
          <section className='home'>
             <Card
-            gift={gift}
+            gift={Gift}
             deleteGift={props.gift.url}
             />
          </section>

@@ -1,7 +1,7 @@
 export interface Gift {
     id?: number
     url: string
-    author_id: string
+    author_id: number
 }
 
 export interface Option {
